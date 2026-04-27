@@ -71,10 +71,10 @@
 
 		<!-- 创作日期：2026-04-21，作者：leiyangjun — 数据访问与文档（Druid/MyBatis 与 SCA 2025.1.0.0 BOM 对齐） -->
 		<druid-spring-boot.version>1.2.27</druid-spring-boot.version>
-		<springdoc-openapi.version>3.0.1</springdoc-openapi.version>
-		<knife4j.version>4.5.0</knife4j.version>
 		<mybatis-spring-boot.version>3.0.5</mybatis-spring-boot.version>
 		<mybatis-generator.version>1.4.2</mybatis-generator.version>
+		<!-- PageHelper 与 MyBatis Spring Boot 3.x / Spring Boot 4 搭配使用 -->
+		<pagehelper-spring-boot.version>2.1.0</pagehelper-spring-boot.version>
 		<jasypt-spring-boot.version>4.0.4</jasypt-spring-boot.version>
 
 		<!-- 创作日期：2026-04-21，作者：leiyangjun — 阿里系 JSON / Excel -->
@@ -90,6 +90,7 @@
 		<mapstruct.version>1.6.3</mapstruct.version>
 		<lombok.version>1.18.42</lombok.version>
 		<commons-lang3.version>3.18.0</commons-lang3.version>
+		<commons-text.version>1.13.0</commons-text.version>
 
 		<!-- 创作日期：2026-04-21，作者：leiyangjun — 发布 Central 相关插件版本 -->
 		<central.publishing.maven.version>0.7.0</central.publishing.maven.version>
@@ -122,41 +123,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>knife4j-dependencies</artifactId>
-				<version>${knife4j.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-
-			<!-- 创作日期：2026-04-21，作者：leiyangjun — SpringDoc 3.x（勿对 starter 单坐标误用 import） -->
-			<dependency>
-				<groupId>org.springdoc</groupId>
-				<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-				<version>${springdoc-openapi.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springdoc</groupId>
-				<artifactId>springdoc-openapi-starter-webflux-ui</artifactId>
-				<version>${springdoc-openapi.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springdoc</groupId>
-				<artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
-				<version>${springdoc-openapi.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springdoc</groupId>
-				<artifactId>springdoc-openapi-starter-webflux-api</artifactId>
-				<version>${springdoc-openapi.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springdoc</groupId>
-				<artifactId>springdoc-openapi-starter-common</artifactId>
-				<version>${springdoc-openapi.version}</version>
-			</dependency>
-
 			<!-- 创作日期：2026-04-21，作者：leiyangjun — 数据源与 ORM -->
 			<dependency>
 				<groupId>com.alibaba</groupId>
@@ -177,6 +143,11 @@
 				<groupId>org.mybatis.generator</groupId>
 				<artifactId>mybatis-generator-core</artifactId>
 				<version>${mybatis-generator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper-spring-boot-starter</artifactId>
+				<version>${pagehelper-spring-boot.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.ulisesbocchio</groupId>
@@ -218,6 +189,11 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>${commons-lang3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-text</artifactId>
+				<version>${commons-text.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>cn.hutool</groupId>
