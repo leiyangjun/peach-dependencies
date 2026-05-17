@@ -77,7 +77,7 @@
 		<pagehelper-spring-boot.version>2.1.0</pagehelper-spring-boot.version>
 		<jasypt-spring-boot.version>4.0.4</jasypt-spring-boot.version>
 
-		<!-- 创作日期：2026-04-21，作者：leiyangjun — 阿里系 JSON / Excel -->
+		<!-- 创作日期：2026-04-21，作者：leiyangjun — 阿里 Fastjson2（显式工具，非 MVC 默认）；Jackson 3 由 spring-boot-dependencies 托管 -->
 		<fastjson2.version>2.0.61</fastjson2.version>
 		<easyexcel.version>4.0.3</easyexcel.version>
 
