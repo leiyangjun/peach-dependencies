@@ -229,6 +229,23 @@
 				<artifactId>javase</artifactId>
 				<version>${zxing.version}</version>
 			</dependency>
+
+			<!-- Peach 拆分后的 common Starter（与 peach-common-start 单体并存，供新工程选用） -->
+			<dependency>
+				<groupId>org.peach.common.core</groupId>
+				<artifactId>peach-common-core-start</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.peach.common.mybatis</groupId>
+				<artifactId>peach-common-mybatis-start</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.peach.common.mvc</groupId>
+				<artifactId>peach-common-mvc-start</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
